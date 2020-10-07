@@ -1,0 +1,23 @@
+.navbar-brand {
+	padding-top: 12px;	
+	
+}
+.panel-defaul {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.alert{
+	margin-left: 10px;
+	margin-right: 10px;
+	
+}
+
+.cob-link-panel {
+	float: right;
+	padding: 0px
+}
+.cob-titulo-panel {
+	float: left;
+	padding: 2px
+	
+}
