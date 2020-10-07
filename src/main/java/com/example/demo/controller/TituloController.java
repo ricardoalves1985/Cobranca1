@@ -18,16 +18,12 @@ import com.example.demo.model.StatusTitulo;
 import com.example.demo.model.Titulo;
 import com.example.demo.repositoty.Titulos;
 
-
-
 @Controller
 @RequestMapping("/titulos")
 public class TituloController {
 	
 	private static final String CADASTRO_VIEW = "CadastroTitulo";
-	
-	
-	
+
 	@Autowired
 	private Titulos titulos;
 
@@ -62,7 +58,6 @@ public class TituloController {
 		return Arrays.asList(StatusTitulo.values());
 	}
 	
-	
 	@RequestMapping("{codigo}")
 	public ModelAndView edicao(@PathVariable("codigo") Titulo titulo) {		
 		
@@ -70,9 +65,7 @@ public class TituloController {
 		mv.addObject(titulo);
 		return mv;
 	}
-	
-	
-	
+
 	@RequestMapping(value="{codigo}", method = RequestMethod.DELETE)
 	public String excluir(@PathVariable Long codigo, RedirectAttributes attributes) {
 		titulos.deleteById(codigo);
@@ -81,13 +74,4 @@ public class TituloController {
 		return "redirect:/titulos";
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
