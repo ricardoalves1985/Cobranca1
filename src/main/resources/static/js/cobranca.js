@@ -26,6 +26,8 @@ $(function() {
 		var botaoReceber = $(event.currentTarget);
 		var urlReceber = botaoReceber.attr('href');
 		
+		
+		
 		var response = $.ajax({
 			url: urlReceber,
 			type: 'PUT'
